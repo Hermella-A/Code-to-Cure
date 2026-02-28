@@ -1,0 +1,320 @@
+{% extends("public_template_Amh.html") %}
+
+    {% block title %} Home {% endblock %}
+
+    {% block div %}
+
+        <div class="logo">
+            <a href=""><img src="{{ url_for('static', filename='img/sitota.png') }}" alt="picture for Sitota center for Mental Healthcare"></a>
+        </div>
+
+
+    {% endblock %}
+
+    {% block nav %}
+    <div class="links" id="links">
+        <a href="#about-section">ስለ እኛ</a>
+        <a href="#infos">ቀጠሮ</a>
+        <a href="#service-section">አገልግሎቶች</a>
+        <a href="#team-section">ቡድን</a>
+        <a href="#contact-us">መገኛችን</a>
+    </div>
+    <div class="hum-burger" id="hum">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    {% endblock %}
+
+<!-- main -->
+
+    {% block main %}
+
+        <div class="container">
+            <div class="show-case">
+                <div class="info">
+                    <h1>ስጦታ ማዕከል <br>ተግባራት ቃላት አይደሉም።</h1>
+                    <a href="/Amh_register"><button type="submit"> ይመዝገቡ </button></a>
+                </div>
+            </div>
+        </div>
+
+<!-- About-us_section  -->
+
+        <div class="about-section" id="about-section">
+
+            <h2>ስለ እኛ</h2>
+
+            <div class="ab_cure">
+                <div class="text">
+                    <p>ስጦታ የአእምሮ ጤና እንክብካቤ በአዲስ አበባ ኢትዮጵያ ጥራት ያለው እንክብካቤ ላይ ያተኮረ ታካሚን ያማከለ የአእምሮ ጤና አገልግሎት የሚሰጥ የግል የአእምሮ ህክምና ማዕከል ነው። ቀደም ሲል በልደታ ክፍለ ከተማ እና በቦሌ ክፍለ ከተማ አዲሱ ሚካኤል ከፍተኛ ክሊኒክ በሚል ስም ይሰራ የነበረ ሲሆን ስሙን በ2016 ወደ ስጦታ የአዕምሮ ህክምና እና ማገገሚያ ማዕከል ተቀይሯል።
+                    <hr> <br> ስጦታ የአዕምሮ ጤና እንክብካቤ የሕዝብ ኃላፊነቱ የተወሰነ ኩባንያ የተመሰረተው ከ14 አመት በፊት ሲሆን በዶ/ር ዮናስ ባህረጥበብ የተመሰረተ ታዋቂ እና እያደገ ያለ የአእምሮ ጤና ማዕከል ነው። የዚህ ኩባንያ መስራች በሀገራችን የአእምሮ ጤና ስርዓት ውስጥ የሕክምና ዶክተሮችን እና ልዩ ባለሙያዎችን ማሰልጠን ጨምሮ ከፍተኛ ጥረት አድርጓል.                        
+                </div>
+                
+                <div class="image">
+                    <img src="{{ url_for('static', filename='img/stota_logo.jpg')}}" alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+<!-- Info_section -->
+
+        <div class="infos" id="infos">
+            <h2>እኛ የምንታወቀው </h2>
+            <div class="main-service">
+                <div class="ms1">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='img/qc.png')}}" alt="">
+                    </div>
+                    <h3>ጥራት ያለው እንክብካቤ</h3>
+                    <p>በስጦታ ማእከል ስለጤንነትዎ ያሳስበናል ለዚህም ነው በዕለት ተዕለት አገልግሎታችን ለጥራት የምንሰራው።</p>
+                </div>
+                <div class="ms1">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='img/sp.png')}}" alt="">
+                    </div>
+                    <h3>ችሎታ ያላቸው ባለሙያዎች</h3>
+                    <p>ስጦታ ማእከል ከአስር አመት በላይ ልምድ ያለው እና ቁርጠኛ ሰራተኞች ያለው የመጀመሪያው እና ትልቁ የአእምሮ ጤና እንክብካቤ ተቋም ነው።</p>
+                </div>
+                <div class="ms1">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='img/sf.png')}}" alt="">
+                    </div>
+                    <h3>መደበኛ ተቋም</h3>
+                    <p>በአዲስ አበባ የሚገኘው የስጦታ ማእከል ዘመናዊና የተሟላ አገልግሎት የሚሰጥ ተቋም ነው።</p>
+                </div>
+                <div class="ms1">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='img/rs.png')}}" alt="">
+                    </div>
+                    <h3>አስተማማኝ አገልግሎት በማንኛውም ሰአት/ቀን  </h3>
+                    <p>በሮቻችን ለአደጋ ጊዜ በማንኛውም ሰአት/ቀን  ክፍት ናቸው እና በተቻለ መጠን የአዕምሮ ጤና እንክብካቤን በእርስዎ ፍላጎት እናቀርባለን።</p>
+                </div>
+            </div>
+            <div class="btn">
+                <a href="/Amh_appointment"> <button> ቀጠሮ ያሲዙ </button></a>
+            </div>
+        </div>
+        
+<!-- Service_section -->
+
+        <div class="service-section" id="service-section">
+            <h2>ዋና አገልግሎቶች</h2>
+            
+            <div class="our_service">
+                
+                <div class="box">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='img/services/exitfromcrisis.jpg') }}" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>የችግር ጣልቃገብነት</h3>
+                        <p>አንድ ሰው በክስተቶች መጨናነቅ ሲሰማው ቀውስ ይከሰታል። ቀውሱ በሰውዬው አካባቢ ላይ ድንገተኛ ለውጥ በሚያመጡ ክስተቶች ሊፈጠር ይችላል ለምሳሌ፡- ሀዘን፣ መሞት ወይም ልጅ መውለድ። እንዲሁም እንደ ተንከባካቢ ህመም ካሉ ከማንኛውም የአእምሮ ጤና ጉዳዮች ጋር ያልተያያዙ ምክንያቶች ጋር ሊገናኝ ይችላል።</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='img/services/therapy1.jpg') }}" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>ሕክምናዎች</h3>
+                        <p>ሳይኮቴራፒ፣ ወይም “የንግግር ሕክምና”፣ የአእምሮ ሕመም ያለባቸውን ሰዎች ሕመማቸውን እንዲረዱ በመርዳት የማከም ዘዴ ነው። ሰዎችን ስልቶችን ያስተምራል፣ ጭንቀትን እና ጤናማ ያልሆኑ አስተሳሰቦችን እና ባህሪያትን ለመቋቋም መሳሪያዎችን ይሰጣቸዋል። ሳይኮቴራፒ ሕመምተኞች ምልክቶቻቸውን በተሻለ ሁኔታ እንዲቆጣጠሩ እና በዕለት ተዕለት ሕይወታቸው በተሻለ ሁኔታ እንዲሠሩ ይረዳቸዋል።</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='img/services/rehabb.jpg') }}" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>አልኮል እና መድሐኒት መልሶ ማቋቋም</h3>
+                        <p>የአልኮል ሱሰኝነትን እና የዕፅ ሱስን እንደ በሽታ እንይዛለን በተጨመሪም መታቀብን ለረጅም ጊዜ ለማገገም አስፈላጊ እንደሆነ እናበረታታለን። አላማችን ህመምተኞች ህክምናን፣ 12 ደረጃ ያለው እና ሌሎች የአዕምሮ ህክምናዎችን እና ተጨማሪ ህክምናዎችን በማጣመር የተጠናከረ፣ ግላዊ ፕሮግራም በማድረግ እንዲያገግሙ መርዳት ነው።</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='img/services/mntl-hlth.jpg') }}" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>የአእምሮ ጤና እንክብካቤ</h3>
+                        <p>የአእምሮ ጤና ችግሮች እርስዎ በሚያስቡበት፣ በሚሰማዎት እና በባህሪዎ ላይ ተጽእኖ ሊያሳድሩ ይችላሉ። በብሪታንያ ውስጥ ከአራት ሰዎች በአንዱ ላይ ይከሰታ፤ ከተለመዱ የአእምሮ ጤና ችግሮች እንደ ድብርት እና ጭንቀት፣ እንደ ስኪዞፈሪንያ እና ባይፖላር ዲስኦርደር ያሉ  ችግሮች አልፎ አልፎ ይደርሳሉ። የአእምሮ ጤና ችግር ልክ እንደ ማንኛውም የአካል ህመም መጥፎ ወይም የከፋ ሊሆን ይችላል - እርስዎ ብቻ ማየት አይችሉም።</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='img/services/Mcounseling.jpg') }}" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>የጋብቻ ምክር</h3>
+                        <p>የግንኙነት ምክር በሰዎች ግንኙነት ውስጥ ያሉ ወገኖችን የማማከር ሂደት ነው፣ እና በተሻለ ሁኔታ ለመቆጣጠር ወይም ለማስታረቅ፣ ችግር የሚፈጥሩ ልዩነቶችን እና በግንኙነት ላይ የሚፈጠሩ የጭንቀት ሁኔታዎችን መድገም ነው። የሚኖረው ግንኙነት በቤተሰብ አባላት ወይም በጥንዶች መካከል ሊሆን ይችላል (በተጨማሪ የቤተሰብ ሕክምናን ይመልከቱ)፣ በሥራ ቦታ ባሉ ሰራተኞች ወይም ቀጣሪዎች፣ ወይም በባለሙያ እና በደንበኛ መካከል ሊሆን ይችላል።</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='img/services/kids.jpg') }}" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>የልጅ ሳይካትሪ</h3>
+                        <p>ስጦታ የአዕምሮ ጤና እንክብካቤ ማእከል ከህፃናት እስከ ጉርምስና ላሉ ህፃናት አጠቃላይ የአእምሮ ጤና አገልግሎቶችን ይሰጣል። የእኛ የሕፃናት የሥነ-አእምሮ አገልግሎቶች በተስተካከሉ ወይም በችግር ጊዜ የልጆችን ፣ ጎረምሶችን እና ቤተሰቦቻቸውን ፍላጎቶች ለማሟላት የተነደፉ ናቸው።</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='img/services/psychologyAssist.jpg') }}" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>ሳይኮሎጂ እርዳት</h3>
+                        <p>ከአሰቃቂ ክስተቶች ጋር ሲጋፈጡ ብዙ ሰዎች ዓለም ደህንነቱ የተጠበቀ ቦታ እንደሆነ አያምኑም። ግባችን እነዚህ ሰዎች ውስጣዊ ሚዛንን እንደገና እንዲያገኙ መርዳት ነው። እርዳታው በአጠቃላይ ሰውን በማከም ላይ እና በሁለገብ አቀራረብ ላይ የተመሰረተ ነው።</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='img/services/pst.jpg') }}" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>የድህረ ማፍሰሻ ድጋፍ</h3>
+                        <p>በአእምሮ ሕመም ምክንያት ሆስፒታል ከገቡ በኋላ ለታካሚዎች መደበኛ የክትትል ሕክምና መስጠት አስፈላጊ ነው። ከተለቀቀ በኋላ የተመላላሽ ታካሚን ከአእምሮ ጤና ባለሙያ ጋር መጎብኘት በሽተኛው ወደ ቤት ወይም ወደ ሥራ አካባቢ የሚደረገው ሽግግር መደገፉን እና ሆስፒታል በመተኛት ወቅት የተገኘው ጥቅም እንደማይጠፋ ለማረጋገጥ ይመከራል።</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='img/services/training.jpg') }}" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>ስልጠና</h3>
+                        <p>የሲቶታ ማእከል ለአእምሮ ህክምና እና ለሥነ-ልቦና ባለሙያዎች እና አማካሪዎች ስልጠና ይሰጣል። የታካሚ ቤተሰቦች ስለአእምሮ ሕመሞች የበለጠ መረጃ እና ግንዛቤ እንዲኖራቸው እና በታካሚው እድገት ላይ በየቀኑ እንዴት እንደሚረዱ ለመርዳት የተነደፈ የቤተሰብ ትምህርት ፕሮግራም አለ።</p>
+                    </div>
+                </div>
+                
+            </div>
+           
+        </div>
+        
+<!-- Team_section -->
+        
+        <div class="team-section" id="team-section">
+            <h2>ቡድናችን</h2>
+            <div class="t1">
+                <div class="tbox1">
+                    <div class="text">
+                        <p>ዶ/ር ዮናስ ባህረጥበብ </p>
+                        <p class="hidden">መስራች እና ዋና ሥራ አስፈፃሚ (የሕክምና ዶክተር ፣ የስነ-አእምሮ ተባባሪ ፕሮፌሰር)                        </p>
+                    </div>
+                </div>
+                
+                <div class="tbox2">
+                    <div class="text">
+                        <p>ዶ/ር አስፋው ዋቅዎያ </p>
+                        <p class="hidden">የሕክምና ዶክተር፣ ከፍተኛ ኤክስፐርት ሳይካትሪስት</p>
+                    </div>
+                </div>
+                <div class="tbox3">
+                    <div class="text">
+                        <p>ዶ/ር ሰላም ሙሉጌታ</p>
+                        <p class="hidden"> የሕክምና ዶክተር ሳይካትሪስት</p>
+                    </div>
+                </div>
+                <div class="tbox4">
+                    <div class="text">
+                        <p>ዶ/ር ሚካኤል ከፍያለው</p>
+                        <p class="hidden">(የሕክምና ዶክተር) የጥራት ቡድን ሥራ አስፈፃሚ ኮሚቴ አባል</p>
+                    </div>
+                </div>
+                <div class="tbox5">
+                    <div class="text">
+                        <p>ዶ/ር ሳሙኤል ጀማል</p>
+                        <p class="hidden">የተመላላሽ ታካሚ ክፍል አስተባባሪ</p>
+                    </div>
+                </div>
+                <div class="tbox6">
+                    <div class="text">
+                        <p>ዶ/ር ዘመኑ ሀሰን</p>
+                        <p class="hidden">የሕክምና ዶክተር፣ ከፍተኛ ኤክስፐርት ሳይካትሪስት</p>
+                    </div>
+                </div>
+                <div class="tbox7">
+                    <div class="text">
+                        <p>መቅደስ መንግስቴ</p>
+                        <p class="hidden">የሥነ ልቦና ባለሙያ</p>
+                    </div>
+                </div>
+                <div class="tbox8">
+                    <div class="text">
+                        <p>ትግስት ፊሌ</p>
+                        <p class="hidden">የሥነ ልቦና ባለሙያ</p>
+                    </div>
+                </div>
+                <div class="tbox9">
+                    <div class="text">
+                        <p>ማህሌት አዘኔ</p>
+                        <p class="hidden">የንግግር ቴራፒስት</p>
+                    </div>
+                </div>
+                <div class="tbox10">
+                    <div class="text">
+                        <p>ጌታሁን ጥበቡ</p>
+                        <p class="hidden">ግንኙነት እና ጋብቻ አማካሪ</p>
+                    </div>
+                </div>
+                
+                <div class="tbox11">
+                    <div class="text">
+                        <p>አንዱአለም ጌ</p>
+                        <p class="hidden">ዋና ሥራ አስኪያጅ</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="btn">
+                <a href="/Amh_appointment" taregt="_blank"> <button> ቀጠሮ ያሲዙ </button></a>
+            </div>
+  
+
+            
+
+        </div>
+<!-- Contact-us_section -->
+
+        <div class="contact-us"  id="contact-us">
+                <h2>መገኛችን </h2>
+                <div class="contact-info">
+                    <div class="box">
+                        <div class="text">
+
+                            <h3>የእኛ ማህበራዊ</h3>
+                                <a href="https://www.facebook.com/AddisuMichaelHigherClinic/?pnref=about.overview"><i class="fa fa-facebook"></i></a>
+                                <a mailto="sitotacenter@gmail.com"><i class="fa fa-envelope"></i></a> 
+                            <h3>የመገኛ አድራሻ</h3>
+                                <div class="ci">
+                                    <i class="fa fa-location"></i> 
+                                    <p>'ሶስት ቁተር ማዞረያ' ቶታል ከበቀለ እሸቴ ህንፃ ጀርባ አዲስ አበባ፣ ኢትዮጵያ</p>
+                                </div>
+
+                                <div class="ci">
+                                    <i class="fa fa-phone"></i> 
+                                    <p>+251113692818 +251113692774</p>
+                                </div>
+                            
+                        </div>
+                        
+                        <div class="form">
+
+                            <h3>ያግኙን</h3>
+                            <form action="">
+                                <p>ለማንኛውም መረጃ፣ ጥቆማዎች ወይም ጥያቄዎች በማንኛውም ሰአት/ቀን ከእኛ ጋር ይገናኙ።</p>
+                                <input type="text" name="Name" placeholder="ስም" id="name">
+                                <input type="email" name="Email" placeholder="ኢሜል" id="email">
+                                <textarea name="message" placeholder="መልእክት" id="message"></textarea>
+                                <button type="submit">ያስገቡ</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+    <!-- End_main -->
+
+    {% endblock %}
+    

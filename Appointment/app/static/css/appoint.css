@@ -1,0 +1,155 @@
+main{
+    height: auto;
+    min-height: 100vh;
+    background-image: linear-gradient(45deg ,rgba(52, 38, 13, 0.719),rgba(0, 0, 0, 0.672)),url(../img/hospital1.jpg);
+    background-size: cover; 
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cure{   
+    width: auto;
+    padding: 10px;
+    height: auto;
+    top: 0;
+    justify-content: center;
+    font-size: 20px;
+    background-color: rgba(249, 249, 249, 0.689);
+    transition: .2s ease-in-out;
+}
+.cure:hover{
+    background: #636363;
+}
+.sticky{
+    padding: 15px;
+    font-size: 18px;
+}
+.sticky .logo img{
+    width: 150px;
+}
+.logo img {
+    width: 200px;
+}
+.cure nav .links a{
+    padding: 20px;
+    color: rgba(254, 166, 33, 0.689);
+    text-decoration: none;
+}
+.appoint_page{
+    min-height: 100vh;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.info{
+    padding: 20px;
+    height: auto;
+    line-height: 5vh;
+    text-align: center;
+    color: #ffffffd1;
+    border-left: 7px solid rgba(243, 155, 23, 0.975);
+}
+.ap_form form{
+    min-width: 450px;
+    height: auto;
+    min-height: 40vh;
+    padding: 10px;
+    color: #ffffffd1;
+    background-color: rgba(254, 166, 33, 0.689);
+}
+.ap_form form h2{
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.975);
+}
+
+.ap_form form .input_field{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+}
+
+.ap_form form .input_field label {
+    padding: 10px;
+    width: 50%;
+}
+
+.ap_form form .input_field input,.ap_form form .input_field input::placeholder, .ap_form form .input_field select{
+    color: #373535;
+    width: 100%;
+}
+.ap_form form .input_field input, .ap_form form .input_field select{
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.555);
+    border: none;
+}
+
+.btn{
+    display: flex;
+    margin: 20px 0;
+    justify-content: center;
+}
+button{
+    
+    width: 100%;
+    padding: 10px;
+    margin: 1px;
+    font-size: 15px;
+    border-radius: 50px;
+    color: #373535;
+    letter-spacing: 2px;
+    background: none;
+    border: 1px solid #fff;
+    transition: .2s;
+}
+button:hover{
+    color: #ffffffd1;
+    background-color: rgba(254, 166, 33, 0.689);
+    border:1px solid rgba(254, 166, 33, 0.689);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+@media (max-width: 650px) {
+    .appoint_page{
+        margin: 0;
+        margin-top: 5em;
+        display: block;
+    }
+    .info{
+        background-color: #111111;
+        margin: 10px;
+        border: 1px solid rgba(243, 155, 23, 0.975);
+    }
+    .ap_form form .input_field{
+        padding: 0;
+        display: block; 
+    }
+    .ap_form form .input_field label,.ap_form form .input_field input{
+        display: block;
+        padding: 5px;
+        margin: 0;
+    }
+    .btn button{
+        font-size: 15px;
+    }
+}
+@media (max-width: 500px) {
+    .ap_form form{
+        min-width: 350px;
+    }
+}
+@media (max-width: 385px) {
+    .ap_form form{
+        min-width: 320px;
+    }
+}

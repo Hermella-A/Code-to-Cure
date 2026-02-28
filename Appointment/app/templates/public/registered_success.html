@@ -1,0 +1,21 @@
+{% extends 'admin_template.html' %}
+
+{% block title %} Success {% endblock %}
+
+{% block link %} {{ url_for('static', filename='css/register.css') }} {% endblock %}
+
+
+{% block main %} 
+<div class="all">
+
+    <div class="reg">
+      <form>
+            <h1 style="color: #fffff4">Successfuly Registered!</h1>
+            <div class="btn">
+                <p>Precced to <a href="/login">login</a></p>
+            </div>
+      </form>
+</div>
+
+</div>
+{% endblock %}

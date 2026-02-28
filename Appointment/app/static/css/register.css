@@ -1,0 +1,159 @@
+main{
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background: linear-gradient(rgba(254, 166, 33, 0.689),rgba(123, 81, 20, 0.689)),url(../img/register_img.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cure{   
+    width: auto;
+    padding: 20px;
+    height: auto;
+    top: 0;
+    justify-content: center;
+    font-size: 20px;
+    background-color: rgba(249, 249, 249, 0.689);
+    transition: .2s ease-in-out;
+}
+.cure:hover{
+    background: #636363;
+}
+.sticky{
+    padding: 15px;
+    font-size: 18px;
+}
+.sticky .logo img{
+    width: 150px;
+}
+.logo img {
+    width: 200px;
+}
+.cure nav .links a{
+    padding: 20px;
+    color: rgba(254, 166, 33, 0.689);
+    text-decoration: none;
+}
+h1{
+    text-align: center;
+    padding: 10px;
+}
+.reg{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 6px;
+}
+form{
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin: 50px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.516);
+    display: block;
+    text-align: start;
+    border-radius: 6px;
+}
+form .input_field{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+form label{
+    width: 50%;
+    font-size: 20px;
+    color: white;
+}
+form input{
+    width: 50%;
+    margin: 20px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.555);
+    border: none;
+    font-size: 15px;
+    border-radius: 6px;
+}
+form input::placeholder{
+    color: #000;
+}
+form input:focus{
+    outline: none;
+    background: #ffffffd1;
+    border-bottom: 1px #000 solid;
+}
+.reg p a{
+    color: rgba(254, 166, 33, 0.689) !important;
+}
+a , p{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.reg p a:hover{
+    border-bottom: 1px Solid #000;
+}
+.btn{
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+button{
+    width: 150px;
+    padding: 5px;
+    margin: 1px;
+    font-size: 15px;
+    border-radius: 20px;
+    color: #ffffffd1;
+    letter-spacing: 2px;
+    background: none;
+    border: 1px solid rgba(254, 166, 33, 0.689);
+    transition: .3s;
+}
+button:hover{
+    background-color: rgba(254, 166, 33, 0.689);
+    cursor: pointer;
+}
+
+
+@media (max-width: 640px){
+    .cure{
+        padding: 5px;
+    }
+    .logo img{
+        width: 150px;
+    }
+    .reg{
+        padding: 0;
+    }
+    form{
+        width: 100%;
+        height: auto;
+        padding: 5px;
+        margin: 0;
+    }
+    form label{
+        font-size: 20px;
+    }
+    form{
+        margin: 10px;
+        padding: 10px;
+    }
+    form .input_field{
+        display: block;
+        padding: 10px;
+    }
+    form label{
+        width: 90%;
+    } form input{
+        width: 90%;
+        margin: 2px;
+        padding: 5px;
+    }
+}

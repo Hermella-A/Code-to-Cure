@@ -1,0 +1,77 @@
+{% extends 'admin_template.html' %}
+
+{% block title %} Appointment {% endblock %}
+
+{% block link %} {{ url_for('static', filename='css/appoint.css') }}  {% endblock %}
+
+{% block main %} 
+
+<div class="appoint_page">
+    <div class="info">
+        <h1>Working hours</h1>
+        <h2>Weekdays</h2>
+        <p> from 8:30AM-6:00PM</p>
+        <h2>Weekends</h2>        
+        <p>from 8:30AM-6:00PM</p>
+    </div>
+    <div class="ap_form">
+            <form action="/appointment" method="POST">
+                <h2>Book Appointment</h2>
+                <div class="input_field">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" placeholder="Name" id="name" name="fullName" required>
+                </div>
+                <div class="input_field">
+                    <label for="phno">Phone Number</label>
+                    <input minlength="10" maxlength="12" type="tel" placeholder="Phone Number" id="phno" name="phno" required>
+                </div>
+                <div class="input_field">
+                    <label for="sex">Sex</label>
+                    <select name="sex" id="sex">
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+                    </select>
+                </div>
+                <div class="input_field">
+                    <label for="doctors">Doctors</label>
+                    <select name="doctors" id="doctors">
+                            <optgroup label="MD specialists">
+                                <option name="Yonas" value="Yonas">Dr Yonas Baheretibeb</option>
+                                <option name="Asfaw" value="Asfaw">Dr Asfaw Wakwoya</option>
+                                <option name="Selam" value="Selam">Dr Selam Mulugeta</option>
+                                <option name="Michael" value="Michael">Dr Michael Kefyalew</option>
+                                <option name="Zemenu" value="Zemenu">Dr Zemenu Hassen</option>
+                            </optgroup>
+                            <optgroup label="Outpatient Department Coordinator">
+                                <option value="Samuel">Dr Samuel Jemal</option>
+                            </optgroup>
+                            <optgroup label="Psychologist">
+                                <option value="Mekdes">Dr Mekdes Mengiste</option>
+                                <option value="Tigist">Tigist Fille</option>
+                            </optgroup>
+                            <optgroup label="Speech Therapist">
+                            <option value="Mahlet">Dr Mahlet Azene</option>
+                            </optgroup>
+                            <optgroup label="Relationship & Marriage Counsler">
+                                <option value="Mekdes">Dr Getahun Tibebu</option>
+                            </optgroup>
+                    </select>
+                </div>
+                <div class="input_field">
+                    <label for="date">Date</label>
+                    <input type="date" placeholder="date" id="date" name="date" required>
+                </div>
+                <div class="input_field">
+                    <label for="time">Time</label>
+                    <input type="time" placeholder="time" id="time" name="time" required>
+                </div>
+
+                <div class="btn">
+                    <button>Make an Appointment</button>
+                </div>
+            </form>
+    </div>
+</div>
+
+
+{% endblock %}

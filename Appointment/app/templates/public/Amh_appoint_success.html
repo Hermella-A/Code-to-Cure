@@ -1,0 +1,23 @@
+{% extends 'Amh_admin_template.html' %}
+
+{% block title %} ቀጠሮዎ ተይዟል። {% endblock %}
+
+{% block link %} {{ url_for('static', filename='css/register.css') }} {% endblock %}
+
+
+{% block main %} 
+<div class="all">
+
+    <div class="reg">
+      <form>
+            <h1 style="color: #fffff4; text-align: center;">ቀጠሮዎ በተሳካ ሁኔታ ተይዟል።</h1>
+                <p>ተራዎ ሲመጣ ማሳወቂያ ይደርሰዎታል።</p>
+                <div class="btn">
+
+                    <p>ወደ<a href="/Amh_home"> መነሻ ገጽ </a> ተመለስ</p>
+                </div>
+      </form>
+</div>
+
+</div>
+{% endblock %}

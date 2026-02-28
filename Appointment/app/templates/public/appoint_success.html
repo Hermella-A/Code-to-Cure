@@ -1,0 +1,23 @@
+{% extends 'admin_template.html' %}
+
+{% block title %} Appointment Booked ! {% endblock %}
+
+{% block link %} {{ url_for('static', filename='css/register.css') }} {% endblock %}
+
+
+{% block main %} 
+<div class="all">
+
+    <div class="reg">
+      <form>
+            <h1 style="color: #fffff4; text-align: center;">Appointment Booked Successfuly!</h1>
+                <p> You will get notified when your turn comes.</p>
+                <div class="btn">
+
+                    <p>Return to<a href="/"> home page</a></p>
+                </div>
+      </form>
+</div>
+
+</div>
+{% endblock %}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block title %} index {% endblock %}</title>
+<!--Default style -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<!-- Reusable style -->
+    <link rel="stylesheet" href=" {% block link %}  {% endblock %}">
+<!-- company logo -->
+    <link rel="icon" type="jpg/png" href="{{ url_for('static', filename='img/logo.jpg') }}">
+<!-- fontawesome icons -->
+    <script src="https://kit.fontawesome.com/9a67d62607.js" crossorigin="anonymous"></script>
+<!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="cure" id="navbar">
+
+              {% block div %}
+              
+              {% endblock %}
+              
+              <nav>
+                  {% block nav %}
+                  
+                  {% endblock %}
+            </nav>
+    </div>
+        
+
+    <main>
+        {% block main %}
+
+        {% endblock %}
+    </main>
+
+
+    <footer>
+        &copy; 2023 |<a href=""> በ ኮድ ቱ ኪዩር</a> የተሰራ
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js')}}"></script>
+    <script src="{% block script %} {% endblock %}"></script>
+</body>
+</html>

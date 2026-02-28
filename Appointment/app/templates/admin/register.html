@@ -1,0 +1,50 @@
+{% extends 'admin_template.html' %}
+
+{% block title %} Register {% endblock %}
+
+{% block link %} {{ url_for('static', filename='css/register.css') }} {% endblock %}
+
+
+{% block main %} 
+<div class="all">
+
+    <h1>Register</h1>
+    <div class="reg">
+        <form action="/register" method="POST">
+            <div class="input_field">
+                <label for="name">Name</label>
+                <input type="text" placeholder="Name" id="name" name="name" required>
+            </div>
+            
+            <div class="input_field">
+                <label for="fname">Father Name </label>
+                <input type="text" placeholder="Father Name" id="fname" name="fname" required>
+            </div>
+            
+            <div class="input_field">
+                <label for="Gname">GrandFather Name</label>
+                <input type="text" placeholder="GrandFather Name" id="Gname" name="Gname" required>
+            </div>
+            
+            <div class="input_field">
+                <label for="phno">Phone number</label>
+                <input type="tel" placeholder="Number" id="phno" name="phno" required> 
+            </div>
+            
+            <div class="input_field">
+                <label for="city">City</label>
+                <input type="text" placeholder="place" id="city" name="city" required>
+            </div>
+
+            <p>Already registered? <a href="/login">Sign-in</a></p>
+            
+            <div class="btn">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+    </form>
+    
+    
+</div>
+
+</div>
+{% endblock %}

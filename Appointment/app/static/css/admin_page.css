@@ -1,0 +1,397 @@
+.cure{
+    display: none;
+}
+main{
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background:  #ffffffcf;
+}
+.ad_page{
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: space-around;   
+}
+
+/* left section */
+
+.left{
+    margin: 5px;
+    padding: 10px;
+    background: rgba(12, 11, 11, 0.933);
+    border-radius: 8px;
+}
+.left .logo{
+    padding: 5px;
+}
+.left .ldiv{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left .links{
+    padding: 5px;
+}
+.left .links a{
+    margin: 10px 0 10px 0;
+    padding: 20px;
+    color: #fff;
+    border-radius: 50%;
+}
+.l1, .l2{
+    display: flex;
+    justify-content: space-between;
+}
+.l1 p , .l2 p{
+    padding: 10px;
+    height: 5vh;
+    position: absolute;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgb(32, 32, 32);
+    transform: translateX(-500%);
+    transition: .3s;
+}
+.l1:hover > p{
+    transform: translateX(100%);
+}
+.l2:hover > p{
+    transform: translateX(100%);
+}
+
+
+/* END of left section */
+
+.right{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    border-radius: 8px;
+}
+.right .right_first{
+    width: 100%;
+    padding: 2px;
+}
+.right_first .top{
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: rgb(49, 51, 51);
+}
+.top .links{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+.top a{
+    padding: 5px;
+    margin: 0 20px 0 2px;
+    color: aliceblue;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0);
+}
+.top a:hover{
+    border-bottom: 1px solid gray;
+}
+.top .user_info{
+    display: flex;
+    align-items: center;
+}
+.user_info p{
+    margin-right: 10px;
+    font-size: 18px;
+    color: aliceblue;
+}
+.user_info i{
+    padding: 10px;
+    border-radius: 50%;
+    color: aliceblue;
+    background-color: gray;
+}
+
+/* bottom section  */
+
+.right_first .bottom{  
+    margin: 5px;
+    padding: 10px;
+    background-color: rgb(32, 32, 32);
+    border-radius: 10px;
+}
+
+.bottom h1,.bottom .registerd
+,#reg h2,#appoint h2{
+    font-size: 20px;
+    color: rgba(254, 166, 33, 0.89);
+}
+.bottom .welcome{
+    width: 100%;
+    min-height: 40vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background: linear-gradient(90deg, rgba(255, 166, 0, 0.64), rgba(102, 51, 153, 0.557));
+}
+.welcome .msg{
+    text-align: center;
+    font-size: 50px;
+}
+.msg h1{
+    font-size: 50px;
+    color: #fff;
+}
+.msg p{
+    font-size: 25px;
+    color: #fff;
+}
+.users .user_display{
+    display: flex;
+    align-self: center;
+}
+.users .user_file{
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(49, 51, 51);
+    color: #fff;
+}
+.user_file img{
+    max-width: 70px;
+    border-radius: 50%;
+}
+.user_file .txt{
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+.user_file h2,.user_file h3,.user_file p{
+    padding: 0;
+    font-size: 20px;
+}
+
+/* Add admin section  */
+
+.ad_reg{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+/* Registeration form */
+
+.reg_form{
+    padding: 20px;
+    background-color: rgb(49, 51, 51);
+    border-radius: 5px;
+    color: aliceblue;
+}
+.reg_form .form{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reg_form form{
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(49, 51, 51);
+    color: #fff;
+}
+.reg_form form .input_field{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+.input_field label {
+    margin-right: 10px;
+}
+.input_field input {
+    padding : 10px;
+}
+.reg_form .btn{
+    display: flex;
+    justify-content: center;
+}
+.reg_form button{
+    padding: 10px;
+    background: none;
+    border: 1px solid rgba(254, 166, 33, 0.89);
+}
+.reg_form button{
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    color: aliceblue;
+    background: none;
+    border: 1px solid rgba(254, 166, 33, 0.89);
+    transition: .2s;
+}
+.reg_form button:hover{
+    color: rgb(49, 51, 51);
+    background-color: rgba(254, 166, 33, 0.89);
+    cursor: pointer;
+}
+
+/* End Registeration form */
+
+
+/* Registerd */
+
+.registerd{
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(49, 51, 51);
+    border-radius: 10px;
+}
+.registerd table{
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+}
+.registerd table tr td{
+    margin: 10px;
+    padding: 10px;
+}
+.registerd table tbody tr:nth-child(odd){
+    background-color: rgba(254, 166, 33, 0.626);
+    color: #fff;
+}
+.registerd table tbody tr:first-child{
+    font-size: 20px;
+}
+
+
+.booked{
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(49, 51, 51);
+    border-radius: 10px;
+}
+.booked table{
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.booked table tr td{
+    margin: 10px;
+    padding: 10px;
+}
+.booked table tbody tr:nth-child(odd){
+    background-color: rgba(254, 166, 33, 0.626);
+    color: #fff;
+}
+.booked table tbody tr:first-child{
+    font-size: 20px;
+}
+
+
+/* Right last */
+
+/* .right .right_last{
+    width: 20%;
+}
+.right_last h1:first-child{
+    padding: 10px;
+    color: aliceblue;
+    font-size: 25px;
+    text-align: center;
+    background-color: black;
+}
+.right_last .rc_appoint{
+    height: auto;
+    min-height: 25vh;
+    background-color: rgb(32, 32, 32);
+    padding: 1px;
+}
+.rc_appoint .rc_users{
+    display: block;
+}
+.rc_users .user{
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    background-color: azure;
+}
+.rc_appoint .user img{
+    margin: 0 10px 0 0;
+    width: 100%;
+    max-width: 70px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.info_h{
+    margin-top: 10px;
+    padding: 10px;
+    color: aliceblue;
+    font-size: 20px;
+    background-color:rgba(12, 11, 11, 0.933);
+    text-align: center;
+}
+.idiv{
+    height: auto;
+}
+.info{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+.info img{
+    width: 100%;
+    height: auto;
+}
+
+
+.td_appoint{
+    padding: 10px;
+    height: auto;
+    min-height: 50vh;
+    background-color: rgb(32, 32, 32);
+}
+.td_appoint .td_users{
+    display: block;
+}
+
+.td_users .user{
+    padding: 10px;
+    margin: 1px;
+    background-color: gainsboro;
+}
+.td_appoint .user img{
+    margin: 0 10px 0 0;
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+.td_appoint .user .txt{
+    padding: 5px;
+    text-align: center;
+}
+.td_appoint .txt p{
+    margin: 2px;
+}
+.radios{
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.radios a{
+    margin: 20px;
+    text-decoration: none;
+    color: #fff;
+} */

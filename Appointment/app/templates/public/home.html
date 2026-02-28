@@ -1,0 +1,320 @@
+{% extends("public_template.html") %}
+
+    {% block title %} Home {% endblock %}
+
+    {% block div %}
+
+        <div class="logo">
+            <a href=""><img src="{{ url_for('static', filename='img/sitota.png') }}" alt="picture for Sitota center for Mental Healthcare"></a>
+        </div>
+
+
+    {% endblock %}
+
+    {% block nav %}
+    <div class="links" id="links">
+        <a href="#about-section">About us</a>
+        <a href="#infos">Appointment</a>
+        <a href="#service-section">Service</a>
+        <a href="#team-section">Team</a>
+        <a href="#contact-us">Contact</a>
+    </div>
+    <div class="hum-burger" id="hum">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    {% endblock %}
+
+<!-- main -->
+
+    {% block main %}
+
+        <div class="container">
+            <div class="show-case">
+                <div class="info">
+                    <h1>Sitota Center<br> Deeds not Words.</h1>
+                    <a href="/Amh_register"><button type="submit"> Register now</button></a>
+                </div>
+            </div>
+        </div>
+
+<!-- About-us_section  -->
+
+        <div class="about-section" id="about-section">
+
+            <h2>About us</h2>
+
+            <div class="ab_cure">
+                <div class="text">
+                    <p>Sitota mental health care is a private psychiatric center that provides patient centered mental health service that focus on quality care in Addis Ababa, Ethiopia. Formerly it was working under the name of Addisu Michael Higher Clinic in Lideta sub city and Bole sub city, and has changed its name to Sitota Psychiatry and Rehabilitation Center in 2016.
+                    <hr> <br> Sitota center for mental health care P.L.C was established 14 years ago, it is a prominent and evolving mental health center founded by Dr. Yonas Baheretibeb. The founder of this company has significant endeavors in many aspect of mental health system of our country including training of medical doctors and specialists.</p>
+                </div>
+                
+                <div class="image">
+                    <img src="{{ url_for('static', filename='img/stota_logo.jpg')}}" alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+<!-- Info_section -->
+
+        <div class="infos" id="infos">
+            <h2>We are known by</h2>
+            <div class="main-service">
+                <div class="ms1">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='img/qc.png')}}" alt="">
+                    </div>
+                    <h3>Quality Care</h3>
+                    <p>At Sitota Center we are concerned about your health that’s why we are dedicated to quality in our daily service.</p>
+                </div>
+                <div class="ms1">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='img/sp.png')}}" alt="">
+                    </div>
+                    <h3>Skilled Professionals</h3>
+                    <p>Sitota Center is the first and biggest mental health care facility with more than ten years of experience and committed staff</p>
+                </div>
+                <div class="ms1">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='img/sf.png')}}" alt="">
+                    </div>
+                    <h3>Standard Facility</h3>
+                    <p>The Sitota Center facility located in Addis Ababa is a modern and fully equipped facility where multiple services are delivered.</p>
+                </div>
+                <div class="ms1">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='img/rs.png')}}" alt="">
+                    </div>
+                    <h3>Reliable Service 24/7</h3>
+                    <p>Our doors are open 24/7 for emergency admission and to deliver the best possible mental health care at your need.</p>
+                </div>
+            </div>
+            <div class="btn">
+                <a href="/appointment"> <button> Make an appointment </button></a>
+            </div>
+        </div>
+        
+<!-- Service_section -->
+
+        <div class="service-section" id="service-section">
+            <h2>Main Services</h2>
+            
+            <div class="our_service">
+                
+                <div class="box">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='img/services/exitfromcrisis.jpg') }}" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Crisis Intervention</h3>
+                        <p>A crisis occurs when an individual feels overwhelmed by events. The crisis may be precipitated by events which bring about sudden change to the person’s environment eg, bereavement, redundancy or childbirth. It may also be linked to factors unrelated to any mental health issues such as the illness of a carer </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='img/services/therapy1.jpg') }}" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Therapies</h3>
+                        <p>Psychotherapy, or “talk therapy”, is a way to treat people with a mental disorder by helping them understand their illness. It teaches people strategies and gives them tools to deal with stress and unhealthy thoughts and behaviors. Psychotherapy helps patients manage their symptoms better and function at their best in everyday life.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='img/services/rehabb.jpg') }}" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Alcohol and Drug Rehab</h3>
+                        <p>We treat alcoholism and drug addiction as an illness and promote abstinence as essential for long-lasting recovery. Our aim is to help patients recover through an intensive, personalized program that combines medical treatment, 12 Step and other psychiatric therapies and complementary therapies.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='img/services/mntl-hlth.jpg') }}" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Mental Health Care</h3>
+                        <p>Mental health problems can affect the way you think, feel and behave. They affect around one in four people in Britain, and range from common mental health problems, such as depression and anxiety, to more rare problems such as schizophrenia and bipolar disorder. A mental health problem can feel just as bad, or worse, as any other physical illness – only you cannot see it.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='img/services/Mcounseling.jpg') }}" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Marriage Counseling</h3>
+                        <p>Relationship counseling is the process of counseling the parties of a human relationship in an effort to recognize, and to better manage or reconcile, troublesome differences and repeating patterns of stress upon the relationship. The relationship involved may be between members of a family or a couple (see also family therapy), employees or employers in a workplace, or between a professional and a client.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='img/services/kids.jpg') }}" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Child Psychiatry</h3>
+                        <p>Sitota Center for Mental Health Care offers a comprehensive spectrum of mental health services for children from infancy through adolescence. Our pediatric psychiatric services are designed to meet the needs of children, adolescents and their families in times of adjustment or crisis.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='img/services/psychologyAssist.jpg') }}" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Psychology Assist</h3>
+                        <p>Confronted with traumatic events most people do not believe any more that the world is a safe place. Our goal is to help these people to re-find the inner balance. The assistance is based on the holistic approach, on treating the person as a whole.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='img/services/pst.jpg') }}" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Post Discharge Support</h3>
+                        <p>It is important to provide regular follow-up therapy to patients after they have been hospitalized for mental illness. An outpatient visit with a mental health practitioner after discharge is recommended to make sure that the patient’s transition to the home or work environment is supported and that gains made during hospitalization are not lost.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='img/services/training.jpg') }}" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Training</h3>
+                        <p>Sitota Center provides training to psychiatric and pschology professionals and counselors and there’s a family education program designed to help families of patients have more information and awareness about mental illnesses and how they can help in the progress of the patient on a daily basis.</p>
+                    </div>
+                </div>
+                
+            </div>
+           
+        </div>
+        
+<!-- Team_section -->
+        
+        <div class="team-section" id="team-section">
+            <h2>our team</h2>
+            <div class="t1">
+                <div class="tbox1">
+                    <div class="text">
+                        <p>Dr Yonas Baheretibeb</p>
+                        <p class="hidden">Founder and CEO (MD, Associate Professor of Psychiatry)</p>
+                    </div>
+                </div>
+                
+                <div class="tbox2">
+                    <div class="text">
+                        <p>Dr Asfaw Wakwoya</p>
+                        <p class="hidden">MD, Senior Expert Psychiatrist</p>
+                    </div>
+                </div>
+                <div class="tbox3">
+                    <div class="text">
+                        <p>Dr Selam Mulugeta</p>
+                        <p class="hidden">MD Psychiatrist</p>
+                    </div>
+                </div>
+                <div class="tbox4">
+                    <div class="text">
+                        <p>Dr Michael Kefyalew</p>
+                        <p class="hidden">(MD) Quality Team Executive Committee Member</p>
+                    </div>
+                </div>
+                <div class="tbox5">
+                    <div class="text">
+                        <p>Dr Samuel Jemal</p>
+                        <p class="hidden">Outpatient Department Coordinator</p>
+                    </div>
+                </div>
+                <div class="tbox6">
+                    <div class="text">
+                        <p>Dr Zemenu Hassen</p>
+                        <p class="hidden">MD, Senior Expert Psychiatrist</p>
+                    </div>
+                </div>
+                <div class="tbox7">
+                    <div class="text">
+                        <p>Mekdes Mengiste</p>
+                        <p class="hidden">Psychologist</p>
+                    </div>
+                </div>
+                <div class="tbox8">
+                    <div class="text">
+                        <p>Tigist Fille</p>
+                        <p class="hidden">Psychologist</p>
+                    </div>
+                </div>
+                <div class="tbox9">
+                    <div class="text">
+                        <p>Mahlet Azene</p>
+                        <p class="hidden">Speech Therapist</p>
+                    </div>
+                </div>
+                <div class="tbox10">
+                    <div class="text">
+                        <p>Getahun Tibebu</p>
+                        <p class="hidden">Relationship & Marriage Counsler</p>
+                    </div>
+                </div>
+                
+                <div class="tbox11">
+                    <div class="text">
+                        <p>Andualem Getie</p>
+                        <p class="hidden">CEO</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="btn">
+                <a href="/appointment" taregt="_blank"> <button> Make an appointment </button></a>
+            </div>
+  
+
+            
+
+        </div>
+<!-- Contact-us_section -->
+
+        <div class="contact-us"  id="contact-us">
+                <h2>Contact us</h2>
+                <div class="contact-info">
+                    <div class="box">
+                        <div class="text">
+
+                            <h3>Our Socials</h3>
+                                <a href="https://www.facebook.com/AddisuMichaelHigherClinic/?pnref=about.overview"><i class="fa fa-facebook"></i></a>
+                                <a mailto="sitotacenter@gmail.com"><i class="fa fa-envelope"></i></a> 
+                            <h3>Contact Info</h3>
+                                <div class="ci">
+                                    <i class="fa fa-location"></i> 
+                                    <p>'Sost Kuter Mazoreya' Total behind 'Bekele Eshete Building' Addis Ababa, Ethiopia</p>
+                                </div>
+
+                                <div class="ci">
+                                    <i class="fa fa-phone"></i> 
+                                    <p>+251113692818 +251113692774</p>
+                                </div>
+                            
+                        </div>
+                        
+                        <div class="form">
+
+                            <h3>Contact-us</h3>
+                            <form action="">
+                                <p>Get in touch with us 24/7 for any information, suggestions, or questions.</p>
+                                <input type="text" name="Name" placeholder="name" id="name">
+                                <input type="email" name="Email" placeholder="Email" id="email">
+                                <textarea name="message" placeholder="Message" id="message"></textarea>
+                                <button type="submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+    <!-- End_main -->
+
+    {% endblock %}
+    

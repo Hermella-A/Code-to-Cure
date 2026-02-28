@@ -1,0 +1,113 @@
+main{
+    width: 100%;
+    height: auto;
+    height: 100vh;
+    background: linear-gradient(rgba(254, 166, 33, 0.689),rgba(123, 81, 20, 0.689)),url(../img/register_img.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sticky{
+    padding: 15px;
+    font-size: 18px;
+    position: fixed;
+}
+.sticky .logo img{
+    width: 150px;
+}
+.logo img {
+    width: 200px;
+}
+
+.all{
+    text-align: center;
+}
+h1{
+    color:rgb(0, 0, 0);
+    text-align: center;
+}
+.form{
+    padding: 2px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{ 
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.516);
+}
+form input{
+    width: 250px;
+    margin: 20px;
+    padding: 10px;
+    background: rgba(196, 194, 194, 0.555);
+    border: none; 
+    display: block;
+    font-size: 15px;
+}
+form input::placeholder{
+    color: #000;
+}
+form input:focus{
+    outline: none;
+    background: #fff;
+    border-bottom: 1px #000 solid;
+}
+form select{
+    margin: 10px;
+    padding: 10px;
+    background: rgba(196, 194, 194, 0.555);
+    border: none;
+    border-radius: 2px;
+}
+form p{
+    margin-bottom: 20px;
+    color: #ffffffd1;
+    font-weight: 400;
+}
+form p a {
+    font-weight: 100
+    800;
+    color: rgba(254, 166, 33, 0.689);
+}
+form p a:hover{
+    padding-bottom: 2px;
+    border-bottom: 1px Solid #000;
+} 
+form a{
+    text-decoration: dashed;
+    color: #000;
+
+}
+form button{
+    width: 150px;
+    padding: 5px;
+    margin: 1px;
+    font-size: 15px;
+    border-radius: 20px;
+    color: #ffffffd1;
+    letter-spacing: 2px;
+    background: none;
+    border: 1px solid rgba(254, 166, 33, 0.689);
+    transition: .3s;
+}
+form button:hover{
+    background-color: rgba(254, 166, 33, 0.689);
+    cursor: pointer;
+}
+
+
+footer{
+    padding: 16px;
+}
+
+
+@media (max-width:885px){    
+    .cure nav .logo {
+        display: flex;
+        justify-content: center;
+    }
+}

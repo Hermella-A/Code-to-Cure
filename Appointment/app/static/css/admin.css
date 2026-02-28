@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;   
+    font-family: 'Titillium Web', sans-serif;
+}
+*::selection{
+    background-color: rgb(254, 166, 33);
+}
+input,textarea:focus{
+    outline: none;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+body::selection{
+    background-color: rgba(254, 166, 33, 0.689);
+}
+/*-- Default style for all webpages - above --*/
+.cure{
+    background: rgba(255, 15, 15, 0.516);
+}
+
+main{
+    width: 100%;
+    background: linear-gradient(rgba(254, 166, 33, 0.689),rgba(123, 81, 20, 0.689)),url(../img/register_img.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* Default style for all webpages - below*/
+
+footer{
+    padding: 20px;
+    background-color: rgba(254, 166, 33, 0.89);
+    font-size: 14px;
+}
+footer a{
+    text-decoration: none;
+    color: #636363;
+    transition: .2s;
+}
+footer a:hover{
+    color: #000;
+}

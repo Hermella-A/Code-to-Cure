@@ -1,0 +1,37 @@
+{% extends("public_template.html") %}
+
+{% block title %} Login {% endblock %}
+
+{% block link %} {{ url_for('static', filename='css/login.css') }} {% endblock %}
+
+{% block nav %}
+
+
+<div class="logo">
+    <a href="/"><img src="{{ url_for('static', filename='img/sitota.png') }}" alt="picture for Sitota center for Mental Healthcare"></a>
+</div>
+
+{% endblock %}
+
+{% block main %}
+    <div class="all">
+        <h1>Login</h1>
+        <div class="form">
+            <form action="/login" method="post"> 
+                
+                <input type="text" name="username" id="name" placeholder="Username" required>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+                <p>New here? <a href="/register">Register</a></p>
+                
+                <div class="btn">
+                    <button type="susbmit">Login</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+
+{% endblock %}
+
+{% block script %} {{ url_for('static', filename='js/login.js') }} {% endblock %}

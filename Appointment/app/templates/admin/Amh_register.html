@@ -1,0 +1,50 @@
+{% extends 'Amh_admin_template.html' %}
+
+{% block title %} ይመዝገቡ {% endblock %}
+
+{% block link %} {{ url_for('static', filename='css/register.css') }} {% endblock %}
+
+
+{% block main %} 
+<div class="all">
+
+    <h1>ይመዝገቡ</h1>
+    <div class="reg">
+        <form action="/Amh_register" method="POST">
+            <div class="input_field">
+                <label for="name">ስም</label>
+                <input type="text" placeholder="ስም" id="name" name="name" required>
+            </div>
+            
+            <div class="input_field">
+                <label for="fname">የአባት ስም</label>
+                <input type="text" placeholder="የአባት ስም" id="fname" name="fname" required>
+            </div>
+            
+            <div class="input_field">
+                <label for="Gname">የአያት ስም</label>
+                <input type="text" placeholder="የአያት ስም" id="Gname" name="Gname" required>
+            </div>
+            
+            <div class="input_field">
+                <label for="phno">ስልክ ቁጥር</label>
+                <input type="tel" placeholder="ስልክ ቁጥር" id="phno" name="phno" required> 
+            </div>
+            
+            <div class="input_field">
+                <label for="city">ከተማ</label>
+                <input type="text" placeholder="ከተማ" id="city" name="city" required>
+            </div>
+
+            <!-- <p>Already registered? <a href="/login">Sign-in</a></p> -->
+            
+            <div class="btn">
+                <button type="submit" id="submit">አስገባ</button>
+            </div>
+    </form>
+    
+    
+</div>
+
+</div>
+{% endblock %}

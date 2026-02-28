@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="Amharic">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Choose Language</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/lang.css') }}">
+    <link rel="icon" type="jpg/png" href="{{ url_for('static', filename='img/logo.jpg') }}">
+</head>
+<body>
+    <main>
+        <div>
+            <h1>Choose Your language</h1>        
+            <form action="" method="post">     
+                <button name="Amh" type="submit" value="Amharic">Amharic</button>
+                <button name="En" type="submit" value="English">English</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2023 | Developed by <a href=""> codetocure </a>
+    </footer>
+
+</body>
+</html>
